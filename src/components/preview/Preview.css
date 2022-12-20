@@ -1,5 +1,5 @@
 .project {
-  width: 95%;
+  width: 85%;
   margin-left: 7rem;
   margin-right: 7rem;
   display: flex;
@@ -40,12 +40,12 @@
 }
 @media (max-width: 1024px) {
   .project {
-    margin-left: 3rem;
+    margin-left: 9rem;
     margin-right: 3rem;
   }
-  .__content_wrapper {
+  /* .__content_wrapper {
     width: 100%;
-  }
+  } */
 }
 @media (max-width: 768px) {
   .project {

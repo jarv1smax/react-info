@@ -1,14 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { useRef } from "react";
+import { Link, Tooltip, IconButton, Zoom } from "@material-ui/core";
 import { Container, Typography, TextField, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "../content/TextDecrypt";
+import Resume from "../../settings/resume.json";
 
 import "./Contact.css";
-
-import cv1 from "../../assets/CV1.png";
-import cv2 from "../../assets/CV2.png";
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -23,26 +21,46 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     marginBottom: "2rem",
   },
+  icon: {
+    fontSize: "1.25rem",
+  },
+  socialIcons: {
+    position: "fixed",
+    top: theme.spacing(6),
+    right: theme.spacing(6),
+  },
+  iconButton: {
+    height: "2.5rem",
+    width: "2.5rem",
+    display: "block",
+    marginBottom: theme.spacing(2),
+  },
 }));
 
 export const Contact = () => {
   const classes = useStyles();
-  
+
   return (
     <section id="contact">
       <Container component="main" className={classes.main} maxWidth="md">
         <div className="contact">
-        <div
-            className="_img"
-            style={{
-              background: "url(" + cv1 + ")",
-              backgroundSize: "115%",
-              backgroundPosition: "center",
-              backgroundPositionY:"0",
-              backgroundRepeat: "no-repeat",
-            }}
-          ></div>
-          <div className="_content_wrapper">
+          <div>
+            <span>
+              <i class="fa fa-phone-square"></i>&ensp;
+            </span>
+            <span>{Resume.basics.phone}</span>
+          </div>
+          <div>
+            <span>
+              <i class="fa fa-envelope"></i>&ensp;
+            </span>
+            <span>{Resume.basics.email}</span>
+          </div>
+          <div>
+            <span>
+              <i class="fa fa-location-arrow"></i>&ensp;
+            </span>
+            <span>{Resume.basics.summary}</span>
           </div>
         </div>
       </Container>

@@ -19,14 +19,22 @@ export const SideNavbar = () => {
           Home
         </Typography>
       </a>
-      <a href="#works"
+      <a href="#preview"
+        onClick={() => setActiveNav('#preview')}
+        className={activeNav === '#preview' ? 'active' : ''}
+      >
+        <Typography>
+          Resume
+        </Typography>
+      </a>
+      {/* <a href="#works"
         onClick={() => setActiveNav('#works')}
         className={activeNav === '#works' ? 'active' : ''}
       >
         <Typography>
           Projects
         </Typography>
-      </a>
+      </a> */}
       <a href="#about" 
         onClick={() => setActiveNav('#about')}
         className={activeNav === '#about' ? 'active' : ''}
