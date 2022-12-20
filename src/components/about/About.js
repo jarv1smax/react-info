@@ -41,10 +41,10 @@ export const About = () => {
               <TextDecrypt text={`${greetings}`} />
             </Typography>
             <p className="aboutme">{aboutme}</p>
-            <a href="#contact" className="contact-btn">
+            {/* <a href="#contact" className="contact-btn">
               <i className="fas fa-terminal"></i>
               <Typography component="span"> Send me a message.</Typography>
-            </a>
+            </a> */}
           </div>
         </div>
       </Container>

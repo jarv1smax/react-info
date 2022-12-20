@@ -1,5 +1,5 @@
 import React from 'react';
-import { LogoLink } from '../components/logo/LogoLink';
+// import { LogoLink } from '../components/logo/LogoLink';
 import { Content } from '../components/content/Content';
 import { Hidden } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -9,7 +9,8 @@ import { Resume } from '../components/resume/Resume';
 import { SocialIcons } from '../components/content/SocialIcons';
 import { SpeedDials } from '../components/speedDial/SpeedDial';
 import { SideNavbar } from '../components/nav/SideNavbar';
-import { Works } from '../components/works/Works';
+// import { Works } from '../components/works/Works';
+import { Preview } from '../components/preview/Preview';
 import { About } from '../components/about/About';
 import { Contact } from '../components/contact/Contact';
 
@@ -28,7 +29,7 @@ export const Home = () => {
     <>
       <div className={classes.root} id="home">
         <DisplacementSphere />
-        <LogoLink />
+        {/* <LogoLink /> */}
         <Content />
         <ThemeToggle />
         <Hidden smDown>
@@ -40,7 +41,8 @@ export const Home = () => {
         <Resume />
       </div>
       <SideNavbar />
-      <Works />
+      <Preview />
+      {/* <Works /> */}
       <About />
       <Contact />
     </>
